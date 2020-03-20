@@ -1,0 +1,925 @@
+@import url("https://fonts.googleapis.com/css?family=Exo&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css");
+body {
+  font-family: "Exo", sans-serif;
+}
+
+.green-button {
+  background-color: rgb(146, 208, 80);
+}
+.blue-button {
+  background-color: rgb(18, 138, 246);
+}
+.red-button {
+  background-color: rgb(218, 103, 110);
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: rgb(91, 89, 88);
+}
+.text-grey {
+  color: rgb(118, 113, 113);
+}
+
+/* Index Page */
+.tilt {
+  box-shadow: 0 20px 27px rgba(0, 0, 0, 0.05);
+  transform-style: preserve-3d;
+}
+.scrolltop {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+.scroll {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  background: rgba(18, 140, 246, 0.185);
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 0 0 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.scroll:hover {
+  background: rgba(178, 178, 178, 1);
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.scroll:hover .fa {
+  padding-top: -10px;
+}
+.scroll .fa {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-left: 1px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.callpay-banner {
+  background-image: url(../images/bg-02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+}
+
+.header-callpay {
+  padding-left: 120px;
+  padding-right: 60px;
+}
+.callpay nav {
+  background: transparent;
+  min-height: 85px;
+}
+.callpay-inner nav {
+  background: #05466a;
+  min-height: 85px;
+}
+.inner-pages-header {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.contactform .form-group label span {
+  color: #f83546;
+}
+.contactform form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.contactform label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contactform input,
+.contactform textarea {
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  width: 300px;
+}
+.form-group:nth-child(1) label::after,
+.form-group:nth-child(2) label::after,
+.form-group:nth-child(3) label::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+.inner-pages-header::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: rgb(1, 1, 102);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.nav-link {
+  color: white !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+.callpaybanner-heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.callpay-banner li {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.download-app-callpay {
+  width: 160px;
+  border-radius: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 8px;
+  font-weight: 500;
+  border: none;
+  box-shadow: grey 0px 3px 10px 4px;
+}
+.banner-button {
+  text-align: center;
+  padding-top: 20px;
+}
+.banner-image {
+  width: 65%;
+}
+.howitworks-heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.art-line {
+  background-image: url(../images/Artboard.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 700px;
+  visibility: inherit;
+}
+.card {
+  border: none !important;
+  background-color: rgb(242, 242, 242);
+  border-radius: 5px;
+  box-shadow: grey 0px 3px 10px 4px;
+  text-align: center;
+  padding: 2px !important;
+  height: 200px !important;
+  width: 15rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card-title {
+  font-size: medium;
+  font-weight: 600 !important;
+}
+.card-text {
+  font-size: small;
+}
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 0.75rem;
+}
+.card-upper {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: -100px;
+  margin-right: 100px;
+}
+.card-lower {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-left: 150px;
+  margin-right: -100px;
+}
+.card-numbers {
+  font-size: 5.5rem;
+  font-weight: 500;
+  font-stretch: narrower;
+  padding: 10px;
+  text-shadow: black 4px 4px 4px 4px;
+  visibility: inherit;
+}
+.user-ratings-callpay {
+  background-color: rgb(231, 230, 230);
+  padding: 30px;
+  box-shadow: grey 4px 8px 25px 0px;
+  text-align: center;
+}
+.user-ratings-counter {
+  margin-left: 50px;
+}
+.counter {
+  margin: 1.5%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 100%;
+  border-radius: 6px;
+}
+.counter::after {
+  content: "+";
+}
+.text-counter {
+  color: grey;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.howtouse-callpay {
+  background-image: url(../images/money-money.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 300px;
+}
+.howtouse-left {
+  background-image: url(../images/howtouse.png);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  text-align: right;
+  height: 500px;
+}
+.howtouse-video {
+  width: 560px;
+  height: 315px;
+  margin-top: 70px;
+}
+.howtouse-right {
+  padding: 60px;
+  padding-top: 80px;
+  padding-left: 120px;
+  padding-right: 120px;
+  text-align: center;
+}
+.howtouse-heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding: 10px;
+}
+.howtouseparagraph {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+}
+.app-screenshots-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  padding-bottom: 50px;
+}
+.testimonials-callpay {
+  background-image: url(../images/testimonials.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 205px;
+  text-align: center;
+}
+.carousel .carousel-control {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  top: 50%;
+  background: none;
+}
+.carousel-control i {
+  font-size: 68px;
+  line-height: 42px;
+  position: absolute;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+  bottom: -40px;
+}
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 14px !important;
+  height: 5px !important;
+  border-top: 5px !important;
+  margin: 1px 3px;
+  border-radius: 50px;
+}
+.carousel-indicators li {
+  background: #999;
+  border-color: transparent;
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {
+  background: #555;
+  box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.partners-section {
+  text-align: center;
+  margin-top: 80px;
+  padding: 25px;
+}
+.partners-logo-section {
+  text-align: center;
+  padding: 25px;
+  display: inline-block;
+  margin-top: 70px;
+}
+.partners-heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.partners-paragraph {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footer-callpay {
+  background-color: rgb(118, 113, 113);
+  padding: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-2 {
+  background-color: rgb(0, 32, 96);
+  text-align: center;
+}
+.footer-2 p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-social-icons {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+.social-icon {
+  color: #fff;
+}
+ul.social-icons {
+  margin-top: 10px;
+  padding: 0;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+.fa-facebook {
+  padding: 10px 14px;
+  border-radius: 50px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #080808cb;
+}
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+.fa-twitter {
+  padding: 10px 12px;
+  border-radius: 50px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #080808cb;
+}
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+
+.fa-youtube {
+  padding: 10px 14px;
+  border-radius: 50px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #080808cb;
+}
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+.fa-linkedin {
+  padding: 10px 14px;
+  border-radius: 50px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #080808cb;
+}
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+.fa-instagram {
+  padding: 10px 14px;
+  border-radius: 50px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #080808cb;
+}
+.fa-instagram:hover {
+  background-color: #c436b0;
+}
+
+#app-screenshots-callpay .owl-nav button.owl-prev,
+#app-screenshots-callpay .owl-nav button.owl-next {
+  position: absolute;
+  top: 40%;
+}
+#app-screenshots-callpay .owl-nav button.owl-prev {
+  left: -50px;
+  font-size: 4rem;
+  font-weight: 800;
+}
+#app-screenshots-callpay .owl-nav button.owl-next {
+  right: -50px;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+/* Features Page */
+.features-banner {
+  background-image: url(../images/Feature-Page-Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 740px;
+}
+.banner-features {
+  text-align: center;
+  padding: 20px;
+}
+.featurespage-heading {
+  margin-top: 20%;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  background: rgba(0, 0, 0, 0.13);
+  color: #faf8f88e;
+}
+.features-body {
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+  padding-bottom: 60px;
+}
+.features-body-heading {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: rgb(38, 38, 38);
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.features-body-heading span {
+  color: rgb(89, 89, 89);
+}
+.features-body-heading::after {
+  content: "";
+  width: 200px;
+  height: 3px;
+  background-color: rgb(38, 38, 39);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.features-body-container {
+  margin-top: 30px;
+  padding: 30px;
+}
+.features-inside-header {
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+.features-paragraph {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 20px;
+  padding-top: 5px;
+}
+.row.app_row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/* Media Queries */
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .card-upper {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -100px;
+    margin-right: 100px;
+  }
+  .card-lower {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    margin-right: -100px;
+  }
+  .card-numbers {
+    font-size: 5rem;
+    font-weight: 500;
+    font-stretch: narrower;
+    padding: 5px;
+    text-shadow: black 4px 4px 4px 4px;
+  }
+}
+@media (min-width: 992px) {
+  #sticky-wrap.stickyhead {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /*background: #f7f7f7;*/
+    background: rgba(94, 93, 93, 0.616);
+    /*box-shadow: 0 0 10px rgb(236, 223, 223);*/
+    z-index: 99;
+    transition-duration: 0.4s;
+    padding: 7px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .card-upper {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -40px;
+    margin-right: 40px;
+  }
+  .card-lower {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    margin-right: -80px;
+  }
+  .card-numbers {
+    font-size: 5rem;
+    font-weight: 500;
+    font-stretch: narrower;
+    padding: 5px;
+    text-shadow: black 4px 4px 4px 4px;
+  }
+  .card {
+    border: none !important;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    box-shadow: grey 0px 3px 10px 4px;
+    text-align: center;
+    padding: 2px !important;
+    height: 140px !important;
+    width: 12rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding: 5px !important;
+  }
+  .card-title {
+    font-size: small;
+    font-weight: 500 !important;
+    margin-bottom: 2px !important;
+  }
+  .card-text {
+    font-size: x-small;
+  }
+  .card-body {
+    padding: 5px !important;
+  }
+  .howtouse-video {
+    width: 480px;
+    height: 265px;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+  .user-ratings-counter {
+    margin-left: 0px;
+  }
+  .counter {
+    margin: 1.5%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 991px) {
+  .card-numbers {
+    font-size: 5.5rem;
+    font-weight: 500;
+    font-stretch: narrower;
+    padding: 10px;
+    text-shadow: black 4px 4px 4px 4px;
+    visibility: hidden;
+    display: none;
+  }
+  .card-upper {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .card-lower {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .art-line {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    visibility: inherit;
+  }
+  .card {
+    border: none !important;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    box-shadow: grey 0px 3px 10px 4px;
+    text-align: center;
+    padding: 2px !important;
+    height: auto !important;
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding: 5px !important;
+  }
+  .howitworks-callpay {
+    text-align: center;
+  }
+  .cards-design {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .howtouse-right {
+    padding: 20px;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+  }
+  .user-ratings-counter {
+    margin-left: 0px;
+  }
+  .counter {
+    margin: 1.5%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 6px;
+  }
+  .howtouse-video {
+    width: 300px;
+    height: 215px;
+    margin-top: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .card-numbers {
+    font-size: 5.5rem;
+    font-weight: 500;
+    font-stretch: narrower;
+    padding: 10px;
+    text-shadow: black 4px 4px 4px 4px;
+    visibility: hidden;
+    display: none;
+  }
+  .card-upper {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .card-lower {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .art-line {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    visibility: inherit;
+  }
+  .card {
+    border: none !important;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    box-shadow: grey 0px 3px 10px 4px;
+    text-align: center;
+    padding: 2px !important;
+    height: auto !important;
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding: 5px !important;
+  }
+  .howitworks-callpay {
+    text-align: center;
+  }
+  .cards-design {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .howtouse-right {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .user-ratings-counter {
+    margin-left: 0px;
+  }
+  .counter {
+    margin: 1.5%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: none;
+    text-align: right;
+    border-radius: 6px;
+  }
+  .howtouse-callpay {
+    background-image: none;
+  }
+  .howtouse-video {
+    width: 350px;
+    height: 210px;
+    margin-top: 70px;
+  }
+  .banner-home {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  .banner-image {
+    width: 70%;
+  }
+  .howtouse-left {
+    background: none;
+    text-align: center;
+    height: auto;
+  }
+  #app-screenshots-callpay .owl-nav button.owl-prev,
+  #app-screenshots-callpay .owl-nav button.owl-next {
+    visibility: hidden;
+    display: none;
+  }
+  .partners-section {
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+  }
+  .partners-logo-section {
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-home {
+    margin-bottom: 30px;
+  }
+  .callpaybanner-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .callpay-banner li {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .download-app-callpay {
+    width: 120px;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 5px;
+    font-size: xx-small;
+    font-weight: 500;
+    border: none;
+    box-shadow: grey 0px 3px 10px 4px;
+    margin-bottom: 20px;
+  }
+  .banner-image {
+    width: 70%;
+  }
+  .howitworks-callpay {
+    margin-top: 60px;
+  }
+  .howitworks-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .howtouse-right {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .counter {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+  }
+  .owl-carousel .owl-item img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #owl-carousel .item {
+    text-align: center;
+  }
+  .testimonials-callpay {
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .howtouse-video {
+    width: 260px;
+    height: 145px;
+    margin-top: 10px;
+  }
+  .howtouse-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+  }
+  .app-screenshots-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+  }
+  .partners-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .partners-paragraph {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 334px) {
+  .callpay-banner li {
+    color: white;
+    font-size: small;
+    font-weight: 400;
+  }
+  .howitworks-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
